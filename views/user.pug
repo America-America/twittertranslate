@@ -1,0 +1,39 @@
+extends layout
+block styles
+	link(href= csslink ,rel="stylesheet",type="text/css")
+	link(href="/bootstrap/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+	
+block content
+	div.changeFont
+		h1 Hello 
+		h3 Here you can read this week's #earlgrey tweets in any language from the list	
+	div
+		//input(id="text") #{user.username}
+		//input(id="output")
+		select(id="from")
+			option(value="en") English
+			option(value="es") Spanish
+			option(value="ru") Russian
+			option(value="ja") Japanese
+		select(id="to")
+			option(value="en") English
+			option(value="es") Spanish
+			option(value="ru") Russian
+			option(value="ja") Japanese
+		button(id="translate") Translate
+		script(src="js/transclient.js")
+	div(class="weird")
+		div(id="left") 
+			ul
+				- for (var i = 0; i < tweetlength; i++){
+					li(id="text")= thetweets[i]
+					br
+				-	}
+		div(id="output") 
+	div(class="weird")
+		div
+			a(href="/logout", class="btn btn-lg btn-primary btn-block", id="userLogout") Logout
+		br
+		div
+			a(href="/user_next") 
+				img(src="/images/meow.gif", id="meow")

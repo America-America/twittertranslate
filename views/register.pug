@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+		block title
+			title Welcome!
+		link(href="/bootstrap/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+		link(href="/css/login.css", rel="stylesheet", type="text/css")
+body
+	div.container
+		div(class="col-sm-6 col-sm-offset-3")
+			h2 Create a new user
+			//input(name="restaurant", placeholder="Favorite Restaurant", type="text", class="form-control", required, autofocus)
+			form(action="/register", method="post", class="form-signin")
+				input(name="email", placeholder="email or username", type="text", class="form-control", required)
+				input(name="password", placeholder="Password", type="password", class="form-control", required)
+				button(type="submit", class="registerButton") Register

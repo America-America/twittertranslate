@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+		block title
+			title America's Final Project!
+		link(href="/bootstrap/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+		link(href="/css/login.css", rel="stylesheet", type="text/css")
+	body
+		div.container
+			form(class="form-signin", action="/login", method="post")
+				h2(class="indexHeading") Welcome to my Final Project!
+				input(placeholder="email or username", name="email", type="text", class="form-control", required, autofocus)
+				input(placeholder="Password", name="password", type="password", class="form-control", required)
+				button(type="submit", class="btn btn-lg btn-primary btn-block") Login
+			a(href="/register") Register
+		div
+			img(src="/images/white_flowers.jpg", id="loading")

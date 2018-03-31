@@ -1,0 +1,34 @@
+#left{
+	width: 50%; 
+	float:left;
+}
+#output{
+	width: 50%;
+	float:right;
+}
+.weird{
+	overflow: hidden;
+}
+li{
+	list-style-type: none;
+}
+#userLogout {
+	font-family:Courier;
+}
+body {
+    background: url("/images/pink_back.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+}
+.changeFont{
+	font-family:Courier;
+}
+#meow{
+	border:7px solid #ffffff;
+	border-radius: 25px;
+	position: relative;
+    left: 37%;
+	height: 25%;
+	width: 25%;
+}

@@ -1,0 +1,15 @@
+extends layout
+
+block styles
+	
+	link(href="/bootstrap/css/bootstrap.min.css", rel="stylesheet", type="text/css")
+	link(href="/css/translate1.css", rel="stylesheet", type="text/css")
+	script(src="/js/transclient_next.js")
+block content
+	div.changeFont
+		h1 Christmas Calculator!
+		h3 Here you can see how many days until Christmas.
+		button(id="christmas" onClick="count_christmas()") Calculate Here!
+		div(for="thismany", id="thismany")
+		
+	
